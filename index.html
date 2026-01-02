@@ -15,29 +15,19 @@
 <body>
   <h1>Contact REALTECH Cyber</h1>
 
-  <form id="contactForm" method="POST">
-    <label>
-      Name
-      <input type="text" name="name" placeholder="Your Name" required>
-    </label>
+ <form action="https://formspree.io/f/xgovkzgn" method="POST">
+  <label>
+    Your email:
+    <input type="email" name="email" required>
+  </label>
+  <label>
+    Your message:
+    <textarea name="message" required></textarea>
+  </label>
+  <input type="hidden" name="_next" value="https://wesleymonubi.github.io/realtech-consultants/">
+  <button type="submit">Send</button>
+</form>
 
-    <label>
-      Email
-      <input type="email" name="email" placeholder="Your Email" required>
-    </label>
-
-    <label>
-      Message
-      <textarea name="message" placeholder="Your Message" required></textarea>
-    </label>
-
-    <!-- Hidden fields for Formspree -->
-    <input type="hidden" name="_subject" value="New REALTECH Cyber Inquiry">
-    <input type="hidden" name="_next" value="https://wesleymonubi.github.io/realtech-consultants/">
-    <input type="text" name="_gotcha" style="display:none">
-
-    <button type="submit">Send Message</button>
-  </form>
 
   <div id="formMessage" style="display:none; margin-top:1em; color:green;">
     Your message has been sent successfully!
