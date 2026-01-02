@@ -1,43 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>REALTECH Cyber Consultants</title>
+<form action="https://formspree.io/f/xrebqvlo" method="POST">
+  <label>
+    Your email:
+    <input type="email" name="email" required>
+  </label>
+  <label>
+    Your message:
+    <textarea name="message" required></textarea>
+  </label>
 
-  <!-- Security / CSP meta tags -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://formspree.io; style-src 'self' 'unsafe-inline';">
-  <meta http-equiv="X-Content-Type-Options" content="nosniff">
-  <meta http-equiv="X-Frame-Options" content="DENY">
-  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
-</head>
-<body>
-  <h1>Contact REALTECH Cyber Consultants</h1>
+  <!-- Optional hidden fields -->
+  <input type="hidden" name="_next" value="https://wesleymonubi.github.io/realtech-consultants/">
+  <input type="hidden" name="_subject" value="New REALTECH Cyber Inquiry">
+  <input type="text" name="_gotcha" style="display:none">
 
-  <!-- Formspree default form -->
-  <form action="https://formspree.io/f/xrebqvlo" method="POST">
-    <label>
-      Your email:
-      <input type="email" name="email" required>
-    </label>
-    <label>
-      Your message:
-      <textarea name="message" required></textarea>
-    </label>
-
-    <!-- Optional hidden fields -->
-    <input type="hidden" name="_next" value="https://wesleymonubi.github.io/realtech-consultants/">
-    <input type="hidden" name="_subject" value="New REALTECH Cyber Inquiry">
-    <input type="text" name="_gotcha" style="display:none">
-
-    <button type="submit">Send</button>
-  </form>
-
-  <!-- Success message -->
-  <div id="formMessage" style="display:none; margin-top:1em; color:green;">
-    Your message has been sent successfully!
-  </div>
-
-</body>
-</html>
-
+  <button type="submit">Send</button>
+</form>
